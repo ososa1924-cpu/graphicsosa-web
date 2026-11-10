@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.blogspot.com https://www.blogger.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://*.blogspot.com https://*.bp.blogspot.com https://blogger.googleusercontent.com; connect-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Graphic Sosa — Soluciones creativas para tu marca</title>
+<meta name="description" content="Estudio creativo con base en Venezuela: diseño gráfico, gestión de redes sociales, marketing, publicidad exterior, uniformes corporativos y asesoría de maquinaria. Trabajamos con clientes en Venezuela y en el resto del mundo.">
+<meta name="robots" content="index, follow">
+<!-- Cuando publiques el sitio, reemplaza esta URL por la real (ej: https://graphicsosa.com) -->
+<link rel="canonical" href="https://graphicsosa.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Graphic Sosa">
+<meta property="og:title" content="Graphic Sosa — Soluciones creativas para tu marca">
+<meta property="og:description" content="Diseño gráfico, redes sociales, marketing, publicidad exterior, uniformes y asesoría de maquinaria. Un estudio creativo trabajando sin fronteras.">
+<meta property="og:locale" content="es_VE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://graphicsosa.vercel.app/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://graphicsosa.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://graphicsosa.vercel.app/assets/og-image.jpg">
+<meta name="twitter:title" content="Graphic Sosa — Soluciones creativas para tu marca">
+<meta name="twitter:description" content="Diseño gráfico, redes sociales, marketing y más. Trabajamos con clientes en Venezuela y en el resto del mundo.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Graphic Sosa",
+  "description": "Estudio creativo: diseño gráfico, gestión de redes sociales, marketing, publicidad exterior, uniformes corporativos y asesoría de maquinaria.",
+  "email": "ososa1924@gmail.com",
+  "telephone": "+58-424-2377576",
+  "areaServed": ["Venezuela","Latin America","International"],
+  "sameAs": ["https://www.instagram.com/graphicsosa"], "url": "https://graphicsosa.vercel.app/",
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Diseño Gráfico"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gestión de Redes Sociales"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Marketing y Ventas"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Publicidad Exterior"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Uniformes Corporativos"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Asesoría de Maquinaria"}}
+  ]
+}
+</script>
+<link rel="icon" type="image/png" href="assets/img/i01.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#070a1a;
+    --bg-panel:#10142c;
+    --bg-panel-2:#161b3d;
+    --line:rgba(255,255,255,0.09);
+    --text:#f5f4ff;
+    --text-muted:#8b91b8;
+    --teal:#2dd9c8;
+    --purple:#8b5cf6;
+    --pink:#ec4899;
+    --orange:#fb8b3f;
+    --grad: linear-gradient(90deg, var(--teal), var(--purple) 45%, var(--pink) 70%, var(--orange));
+    --grad-soft: linear-gradient(135deg, rgba(45,217,200,0.15), rgba(139,92,246,0.15), rgba(236,72,153,0.15));
+    --radius: 18px;
+    --maxw: 1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Sora',sans-serif;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--teal);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:'';
+    width:22px;height:1px;
+    background:var(--grad);
+  }
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;margin:0;padding:0;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+  section{position:relative;}
+  ::selection{background:var(--pink); color:#fff;}
+
+  /* background texture — animated, GPU-cheap (transform/opacity only) */
+  .bg-layer{position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden;}
+  .blob{
+    position:absolute; border-radius:50%;
+    filter:blur(70px);
+    will-change:transform;
+    opacity:0.5;
+  }
+  .blob-1{width:640px; height:640px; top:-220px; right:-140px; background:radial-gradient(circle, rgba(139,92,246,0.45), transparent 70%); animation:drift1 26s ease-in-out infinite alternate;}
+  .blob-2{width:520px; height:520px; top:20%; left:-180px; background:radial-gradient(circle, rgba(45,217,200,0.35), transparent 70%); animation:drift2 32s ease-in-out infinite alternate;}
+  .blob-3{width:560px; height:560px; bottom:-200px; right:10%; background:radial-gradient(circle, rgba(236,72,153,0.30), transparent 70%); animation:drift3 22s ease-in-out infinite alternate;}
+  .blob-4{width:420px; height:420px; bottom:10%; left:20%; background:radial-gradient(circle, rgba(251,139,63,0.22), transparent 70%); animation:drift1 29s ease-in-out infinite alternate-reverse;}
+  @keyframes drift1{from{transform:translate(0,0) scale(1);} to{transform:translate(-60px,50px) scale(1.12);}}
+  @keyframes drift2{from{transform:translate(0,0) scale(1);} to{transform:translate(70px,-40px) scale(1.08);}}
+  @keyframes drift3{from{transform:translate(0,0) scale(1);} to{transform:translate(-40px,-60px) scale(1.1);}}
+
+  .particles{position:absolute; inset:0;}
+  .particles span{
+    position:absolute; width:3px; height:3px; border-radius:50%;
+    background:var(--teal); opacity:0.5;
+    animation:rise linear infinite;
+    will-change:transform, opacity;
+  }
+  @keyframes rise{
+    0%{transform:translateY(0); opacity:0;}
+    10%{opacity:0.6;}
+    90%{opacity:0.4;}
+    100%{transform:translateY(-100vh); opacity:0;}
+  }
+  .particles span:nth-child(1){left:6%; top:90%; animation-duration:24s; animation-delay:0s; background:var(--teal);}
+  .particles span:nth-child(2){left:16%; top:95%; animation-duration:30s; animation-delay:3s; background:var(--purple);}
+  .particles span:nth-child(3){left:27%; top:88%; animation-duration:21s; animation-delay:1s; background:var(--pink);}
+  .particles span:nth-child(4){left:38%; top:97%; animation-duration:27s; animation-delay:5s; background:var(--orange);}
+  .particles span:nth-child(5){left:48%; top:92%; animation-duration:23s; animation-delay:2s; background:var(--teal);}
+  .particles span:nth-child(6){left:58%; top:96%; animation-duration:33s; animation-delay:6s; background:var(--purple);}
+  .particles span:nth-child(7){left:67%; top:90%; animation-duration:25s; animation-delay:4s; background:var(--pink);}
+  .particles span:nth-child(8){left:76%; top:94%; animation-duration:29s; animation-delay:1.5s; background:var(--orange);}
+  .particles span:nth-child(9){left:85%; top:88%; animation-duration:22s; animation-delay:7s; background:var(--teal);}
+  .particles span:nth-child(10){left:93%; top:96%; animation-duration:31s; animation-delay:2.5s; background:var(--purple);}
+  .particles span:nth-child(11){left:11%; top:93%; animation-duration:26s; animation-delay:8s; background:var(--pink);}
+  .particles span:nth-child(12){left:72%; top:91%; animation-duration:20s; animation-delay:4.5s; background:var(--orange);}
+
+  /* scroll reveal — cheap opacity/transform only */
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.visible{opacity:1; transform:translateY(0);}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:100;
+    backdrop-filter:blur(14px);
+    background:rgba(7,10,26,0.72);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    height:76px;
+  }
+  .brand{display:flex; align-items:center; gap:12px; font-family:'Sora',sans-serif; font-weight:700; font-size:1.05rem;}
+  .brand svg{width:34px;height:34px;}
+  .nav-links{display:flex; gap:34px; font-size:0.92rem; color:var(--text-muted);}
+  .nav-links a{transition:color .2s;}
+  .nav-links a:hover{color:var(--text);}
+  .nav-right{display:flex; align-items:center; gap:16px;}
+  .lang-toggle{
+    font-family:'IBM Plex Mono',monospace; font-size:0.75rem;
+    border:1px solid var(--line); border-radius:20px;
+    display:flex; overflow:hidden; cursor:pointer;
+  }
+  .lang-toggle button{
+    background:none;border:none;color:var(--text-muted);
+    font-family:inherit;font-size:inherit;padding:7px 12px;cursor:pointer;
+    transition:.2s;
+  }
+  .lang-toggle button.active{background:var(--grad); color:#080a18; font-weight:600;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:11px 22px; border-radius:30px;
+    font-weight:600; font-size:0.9rem;
+    border:1px solid transparent; cursor:pointer;
+    transition:transform .2s, box-shadow .2s;
+    white-space:nowrap;
+  }
+  .btn-grad{background:var(--grad); color:#080a18;}
+  .btn-grad:hover{transform:translateY(-2px); box-shadow:0 10px 30px -8px rgba(236,72,153,0.5);}
+  .btn-ghost{border-color:var(--line); color:var(--text);}
+  .btn-ghost:hover{border-color:rgba(255,255,255,0.3);}
+  .menu-btn{display:none; background:none;border:none; color:var(--text); cursor:pointer;}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:88px 0 60px; position:relative; z-index:1;}
+  .hero-grid{
+    display:grid; grid-template-columns:1.1fr 0.7fr; gap:50px; align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(2.4rem, 5vw, 3.6rem);
+    line-height:1.05;
+    font-weight:800;
+    margin:18px 0 22px;
+  }
+  .hero h1 .grad-text{
+    background:var(--grad);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p.lead{
+    font-size:1.08rem; color:var(--text-muted); max-width:520px; line-height:1.6;
+    margin-bottom:34px;
+  }
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:40px;}
+  .hero-tags{display:flex; gap:10px; flex-wrap:wrap;}
+  .tag{
+    font-family:'IBM Plex Mono',monospace; font-size:0.72rem;
+    padding:6px 12px; border:1px solid var(--line); border-radius:20px;
+    color:var(--text-muted);
+  }
+
+  /* signature: tool palette */
+  .toolbox{
+    position:relative;
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:16px 12px;
+    width:78px;
+    margin:0 auto;
+    box-shadow:0 30px 70px -20px rgba(0,0,0,0.6);
+  }
+  .toolbox::before{
+    content:'';
+    position:absolute; top:-40px; left:50%; transform:translateX(-50%);
+    width:2px; height:40px; background:var(--line);
+  }
+  .toolbox-dots{display:flex; gap:6px; justify-content:center; margin-bottom:14px;}
+  .toolbox-dots span{width:8px;height:8px;border-radius:50%;}
+  .toolbox-dots span:nth-child(1){background:#ff6159;}
+  .toolbox-dots span:nth-child(2){background:#ffbd2e;}
+  .toolbox-dots span:nth-child(3){background:#28c941;}
+  .tool{
+    position:relative;
+    width:54px;height:54px;
+    margin:0 auto 6px;
+    display:flex; align-items:center; justify-content:center;
+    border-radius:12px;
+    cursor:pointer;
+    color:var(--text-muted);
+    transition:background .2s, color .2s;
+  }
+  .tool svg{width:22px;height:22px;}
+  .tool:hover, .tool.active{
+    background:var(--bg-panel-2);
+    color:#fff;
+  }
+  .tool .tip{
+    position:absolute; right:66px; top:50%; transform:translateY(-50%) translateX(6px);
+    background:var(--bg-panel-2);
+    border:1px solid var(--line);
+    padding:8px 14px; border-radius:10px;
+    font-size:0.78rem; white-space:nowrap;
+    opacity:0; pointer-events:none;
+    transition:.2s;
+  }
+  .tool:hover .tip{opacity:1; transform:translateY(-50%) translateX(0);}
+  .toolbox-swatch{
+    margin-top:10px;
+    width:36px;height:36px;
+    border-radius:8px;
+    background:var(--grad);
+    margin-left:auto;margin-right:auto;
+    border:2px solid var(--bg-panel-2);
+  }
+
+  /* ---------- LOGO STRIP ---------- */
+  .strip{
+    padding:26px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    position:relative; z-index:1;
+  }
+  .strip .wrap{display:flex; align-items:center; gap:28px; flex-wrap:wrap; justify-content:center;}
+  .strip .eyebrow{margin-right:6px;}
+  .strip .chip{
+    font-size:0.85rem; color:var(--text-muted);
+    padding:6px 16px; border:1px solid var(--line); border-radius:20px;
+  }
+
+  .logos-strip{
+    display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:18px;
+    position:relative; z-index:1;
+  }
+  .logo-chip{
+    background:#fff; border-radius:14px; padding:14px 22px;
+    display:flex; align-items:center; justify-content:center;
+    width:120px; height:76px;
+    box-shadow:0 10px 26px -12px rgba(0,0,0,0.4);
+    transition:transform .2s;
+  }
+  .logo-chip:hover{transform:translateY(-4px);}
+  .logo-chip img{max-width:100%; max-height:100%; object-fit:contain;}
+  @media (max-width:560px){
+    .logo-chip{width:96px; height:62px; padding:10px 16px;}
+  }
+
+  /* ---------- SECTION HEADS ---------- */
+  .section-head{max-width:640px; margin-bottom:52px;}
+  .section-head h2{font-size:clamp(1.8rem,3.4vw,2.5rem); margin-top:14px; font-weight:700;}
+  .section-head p{color:var(--text-muted); margin-top:14px; line-height:1.6;}
+  section.pad{padding:100px 0;}
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
+    position:relative; z-index:1;
+  }
+  .service-card{
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:30px 26px;
+    transition:transform .25s, border-color .25s;
+  }
+  .service-card:hover{transform:translateY(-6px); border-color:rgba(255,255,255,0.2);}
+  .service-icon{
+    width:46px;height:46px; border-radius:12px;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--grad-soft);
+    margin-bottom:20px;
+  }
+  .service-icon svg{width:22px;height:22px; stroke:var(--teal);}
+  .service-card h3{font-size:1.08rem; margin-bottom:10px;}
+  .service-card p{color:var(--text-muted); font-size:0.92rem; line-height:1.55; margin:0;}
+  .service-card .num{
+    font-family:'IBM Plex Mono',monospace; color:var(--text-muted); font-size:0.75rem; margin-bottom:14px; display:block;
+  }
+
+  /* ---------- PROCESS ---------- */
+  .process{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+    position:relative; z-index:1;
+  }
+  .process-step{padding:0 24px 0 0; position:relative;}
+  .process-step:not(:last-child)::after{
+    content:'';
+    position:absolute; top:20px; right:-2px; width:calc(100% - 40px); height:1px;
+    background:var(--line);
+  }
+  .process-step .step-num{
+    font-family:'IBM Plex Mono',monospace;
+    background:var(--grad); -webkit-background-clip:text;background-clip:text;color:transparent;
+    font-size:1.6rem; font-weight:700; margin-bottom:16px; display:block;
+  }
+  .process-step h4{font-size:1rem; margin-bottom:8px;}
+  .process-step p{color:var(--text-muted); font-size:0.88rem; line-height:1.5;}
+
+  /* ---------- PORTFOLIO ---------- */
+  .filter-row{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:36px;}
+  .filter-btn{
+    font-family:'IBM Plex Mono',monospace; font-size:0.78rem;
+    padding:8px 16px; border-radius:20px; border:1px solid var(--line);
+    background:none; color:var(--text-muted); cursor:pointer; transition:.2s;
+  }
+  .filter-btn.active{background:var(--grad); color:#080a18; border-color:transparent; font-weight:600;}
+  .portfolio-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
+    position:relative; z-index:1;
+  }
+  .p-card{
+    aspect-ratio:4/3;
+    border-radius:16px;
+    border:1px solid var(--line);
+    position:relative; overflow:hidden;
+    display:flex; align-items:flex-end;
+    padding:18px;
+  }
+  .p-card img{
+    position:absolute; inset:0; width:100%; height:100%;
+    object-fit:cover; object-position:top center;
+    transition:transform .4s ease;
+  }
+  .p-card:hover img{transform:scale(1.06);}
+  .p-card .p-overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, transparent 40%, rgba(5,6,16,0.88) 100%);
+  }
+  .p-card .bg{position:absolute; inset:0; opacity:0.55;}
+  .p-card:nth-child(6n+1) .bg{background:linear-gradient(135deg, var(--teal), var(--purple));}
+  .p-card:nth-child(6n+2) .bg{background:linear-gradient(135deg, var(--purple), var(--pink));}
+  .p-card:nth-child(6n+3) .bg{background:linear-gradient(135deg, var(--pink), var(--orange));}
+  .p-card:nth-child(6n+4) .bg{background:linear-gradient(135deg, var(--orange), var(--teal));}
+  .p-card:nth-child(6n+5) .bg{background:linear-gradient(135deg, var(--teal), var(--pink));}
+  .p-card:nth-child(6n+6) .bg{background:linear-gradient(135deg, var(--purple), var(--teal));}
+  .p-card .label{position:relative; z-index:1;}
+  .p-card .label .cat{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; opacity:0.85; text-transform:uppercase; letter-spacing:0.08em;}
+  .p-card .label .title{font-family:'Sora',sans-serif; font-weight:700; font-size:1.05rem; margin-top:4px;}
+  .portfolio-note{
+    margin-top:28px; padding:16px 20px; border:1px dashed var(--line); border-radius:12px;
+    color:var(--text-muted); font-size:0.85rem; display:flex; gap:10px; align-items:flex-start;
+  }
+
+  /* ---------- WHY US ---------- */
+  .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px; position:relative; z-index:1;}
+  .why-card h3{font-size:1.6rem; margin-bottom:12px; font-family:'IBM Plex Mono',monospace; background:var(--grad); -webkit-background-clip:text;background-clip:text;color:transparent;}
+  .why-card p{color:var(--text-muted); font-size:0.92rem; line-height:1.6;}
+
+  /* ---------- BLOG ---------- */
+  .blog-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; position:relative; z-index:1;}
+  .blog-card{
+    background:var(--bg-panel); border:1px solid var(--line); border-radius:var(--radius);
+    overflow:hidden; display:flex; flex-direction:column; transition:transform .25s, border-color .25s;
+  }
+  .blog-card:hover{transform:translateY(-6px); border-color:rgba(255,255,255,0.2);}
+  .blog-card .thumb{width:100%; aspect-ratio:16/9; object-fit:cover; background:var(--bg-panel-2);}
+  .blog-card .thumb-fallback{width:100%; aspect-ratio:16/9; background:var(--grad-soft); display:flex; align-items:center; justify-content:center;}
+  .blog-card .thumb-fallback svg{width:34px;height:34px; color:var(--teal);}
+  .blog-card .blog-body{padding:22px; display:flex; flex-direction:column; gap:10px; flex:1;}
+  .blog-card .blog-date{font-family:'IBM Plex Mono',monospace; font-size:0.72rem; color:var(--text-muted);}
+  .blog-card h3{font-size:1.02rem; line-height:1.35;}
+  .blog-card p{color:var(--text-muted); font-size:0.86rem; line-height:1.55; margin:0; flex:1;}
+  .blog-card .blog-link{font-size:0.84rem; font-weight:600; color:var(--teal); margin-top:4px;}
+  .blog-empty{
+    grid-column:1/-1;
+    text-align:center; padding:60px 30px;
+    border:1px dashed var(--line); border-radius:var(--radius);
+    color:var(--text-muted);
+  }
+  .blog-empty svg{width:40px;height:40px; margin-bottom:16px; color:var(--teal);}
+  .blog-empty h3{color:var(--text); font-size:1.15rem; margin-bottom:8px;}
+  .blog-empty p{max-width:440px; margin:0 auto 20px; font-size:0.9rem; line-height:1.6;}
+  .blog-skeleton{background:linear-gradient(90deg, var(--bg-panel) 25%, var(--bg-panel-2) 37%, var(--bg-panel) 63%); background-size:400% 100%; animation:shimmer 1.6s ease infinite;}
+  @keyframes shimmer{0%{background-position:100% 0;} 100%{background-position:0 0;}}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:760px; margin:0 auto; position:relative; z-index:1;}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{
+    width:100%; text-align:left; background:none; border:none; cursor:pointer;
+    padding:22px 34px 22px 0; position:relative;
+    font-family:'Sora',sans-serif; font-weight:600; font-size:1rem; color:var(--text);
+  }
+  .faq-q::after{
+    content:'+'; position:absolute; right:4px; top:50%; transform:translateY(-50%);
+    font-size:1.4rem; color:var(--teal); transition:transform .25s;
+  }
+  .faq-item.open .faq-q::after{transform:translateY(-50%) rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .3s ease;}
+  .faq-item.open .faq-a{max-height:200px;}
+  .faq-a p{color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin:0 0 22px;}
+  .blog-card.local{cursor:pointer;}
+  .blog-article-panel{
+    margin-top:26px;
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:44px;
+    position:relative; z-index:1;
+  }
+  .blog-article-panel[hidden]{display:none;}
+  .blog-article-panel .close-btn{
+    position:absolute; top:22px; right:22px;
+    width:34px; height:34px; border-radius:50%;
+    background:var(--bg-panel-2); border:1px solid var(--line);
+    color:var(--text); cursor:pointer; font-size:1.1rem; line-height:1;
+  }
+  .blog-article-panel .art-date{font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--teal);}
+  .blog-article-panel h2{font-size:1.7rem; margin:10px 0 22px; max-width:80%;}
+  .blog-article-panel .art-body p{color:var(--text-muted); line-height:1.75; margin-bottom:16px; font-size:0.98rem;}
+  .blog-article-panel .art-body strong{color:var(--text);}
+  .blog-article-panel .art-quote{
+    font-family:'Sora',sans-serif; font-weight:700; font-size:1.2rem;
+    padding:18px 22px; border-left:3px solid; border-image:var(--grad) 1;
+    margin:22px 0; color:var(--text);
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about-wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px; align-items:center; position:relative; z-index:1;}
+  .about-visual{
+    aspect-ratio:1; border-radius:24px; border:1px solid var(--line);
+    background:var(--bg-panel);
+    display:flex; align-items:center; justify-content:center;
+    position:relative; overflow:hidden;
+  }
+  .about-visual svg{width:56%; height:56%;}
+  .about-visual::after{
+    content:''; position:absolute; width:200%; height:200%;
+    background:conic-gradient(from 0deg, var(--teal), var(--purple), var(--pink), var(--orange), var(--teal));
+    opacity:0.14; animation:spin 14s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .about-text p{color:var(--text-muted); line-height:1.7; margin-bottom:16px;}
+  .about-stats{display:flex; gap:36px; margin-top:30px;}
+  .about-stats div strong{display:block; font-family:'Sora',sans-serif; font-size:1.6rem; font-weight:700;}
+  .about-stats div span{font-size:0.8rem; color:var(--text-muted);}
+
+  /* ---------- CONTACT ---------- */
+  .contact-wrap{
+    display:grid; grid-template-columns:1fr 1fr; gap:50px;
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius:28px;
+    padding:56px;
+    position:relative; z-index:1;
+    overflow:hidden;
+  }
+  .contact-wrap::before{
+    content:''; position:absolute; top:-100px; right:-100px; width:280px; height:280px;
+    background:var(--grad); filter:blur(90px); opacity:0.25;
+  }
+  .contact-info h2{font-size:1.9rem; margin-bottom:16px;}
+  .contact-info p{color:var(--text-muted); line-height:1.6; margin-bottom:28px;}
+  .contact-channel{display:flex; align-items:center; gap:12px; margin-bottom:16px; font-size:0.94rem;}
+  .contact-channel svg{width:20px;height:20px; color:var(--teal);}
+  form{display:flex; flex-direction:column; gap:14px; position:relative; z-index:1;}
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  input, select, textarea{
+    background:var(--bg-panel-2);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:13px 14px;
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    font-size:0.9rem;
+    width:100%;
+  }
+  input:focus, select:focus, textarea:focus{outline:2px solid var(--teal); outline-offset:1px;}
+  textarea{resize:vertical; min-height:90px;}
+  .form-note{font-size:0.78rem; color:var(--text-muted);}
+
+  /* ---------- FOOTER ---------- */
+  footer{border-top:1px solid var(--line); padding:40px 0; position:relative; z-index:1;}
+  .footer-wrap{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
+  .footer-wrap .brand{font-size:0.95rem;}
+  .footer-links{display:flex; gap:22px; font-size:0.85rem; color:var(--text-muted);}
+
+  /* toast */
+  #toast{
+    position:fixed; bottom:26px; left:50%; transform:translateX(-50%) translateY(20px);
+    background:var(--bg-panel-2); border:1px solid var(--line);
+    padding:14px 22px; border-radius:12px; font-size:0.88rem;
+    opacity:0; pointer-events:none; transition:.3s; z-index:200;
+  }
+  #toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+
+  @media (max-width: 880px){
+    .nav-links{display:none;}
+    .menu-btn{display:block;}
+    .hero-grid{grid-template-columns:1fr;}
+    .toolbox{display:none;}
+    .services-grid{grid-template-columns:1fr 1fr;}
+    .process{grid-template-columns:1fr 1fr; row-gap:34px;}
+    .process-step:nth-child(2)::after{display:none;}
+    .portfolio-grid{grid-template-columns:1fr 1fr;}
+    .why-grid{grid-template-columns:1fr;}
+    .about-wrap{grid-template-columns:1fr;}
+    .contact-wrap{grid-template-columns:1fr; padding:32px;}
+    .form-row{grid-template-columns:1fr;}
+  }
+  @media (max-width: 560px){
+    .services-grid, .portfolio-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width: 880px){
+    .blob{filter:blur(40px);}
+    .blob-1,.blob-2,.blob-3,.blob-4{width:320px; height:320px;}
+    .particles span:nth-child(n+7){display:none;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<noscript><style>.reveal{opacity:1!important; transform:none!important;}</style></noscript>
+
+<div class="bg-layer" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+  <div class="particles">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+</div>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">
+      <img src="assets/img/i01.webp" alt="Graphic Sosa" style="width:34px;height:auto;">
+      <span>GRAPHIC SOSA</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="#proceso" data-i18n="nav.process">Proceso</a></li>
+      <li><a href="#portafolio" data-i18n="nav.portfolio">Portafolio</a></li>
+      <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button id="btn-es" class="active">ES</button>
+        <button id="btn-en">EN</button>
+      </div>
+      <a href="#contacto" class="btn btn-grad" data-i18n="nav.cta">Cotiza tu proyecto</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow" data-i18n="hero.eyebrow">Soluciones creativas para tu marca</div>
+      <h1 data-i18n="hero.title">Tu marca, <span class="grad-text">sin fronteras.</span></h1>
+      <p class="lead" data-i18n="hero.lead">Diseñamos, gestionamos redes, creamos campañas y desarrollamos identidades de marca para negocios en Venezuela y en el resto del mundo. Un solo equipo, todos los servicios de marca.</p>
+      <div class="hero-ctas">
+        <a href="#portafolio" class="btn btn-grad" data-i18n="hero.cta1">Ver portafolio</a>
+        <a href="https://wa.me/584242377576" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" data-i18n="hero.cta2">Hablemos por WhatsApp</a>
+      </div>
+      <div class="hero-tags">
+        <span class="tag" data-i18n="hero.tag1">🌎 Clientes en 3+ países</span>
+        <span class="tag" data-i18n="hero.tag2">🕒 Respuesta en 24h</span>
+        <span class="tag" data-i18n="hero.tag3">💳 Pagos internacionales</span>
+      </div>
+    </div>
+    <div class="toolbox" aria-hidden="true">
+      <div class="toolbox-dots"><span></span><span></span><span></span></div>
+      <div class="tool active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l7 16 2-7 7-2z"/></svg>
+        <span class="tip" data-i18n="tool.1">Diseño Gráfico</span>
+      </div>
+      <div class="tool">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2" stroke-dasharray="3 3"/></svg>
+        <span class="tip" data-i18n="tool.2">Redes Sociales</span>
+      </div>
+      <div class="tool">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l5-5m0 0l8-8a2 2 0 10-3-3l-8 8m3 3l-3-3"/></svg>
+        <span class="tip" data-i18n="tool.3">Marketing & Ventas</span>
+      </div>
+      <div class="tool">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z"/></svg>
+        <span class="tip" data-i18n="tool.4">Publicidad Exterior</span>
+      </div>
+      <div class="tool">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4h5l2 2h5v14H6z"/><path d="M9 4l1.5 4h3L15 4"/></svg>
+        <span class="tip" data-i18n="tool.5">Uniformes</span>
+      </div>
+      <div class="tool">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="7" width="14" height="10" rx="1"/><path d="M8 7V4h8v3M8 20h8"/></svg>
+        <span class="tip" data-i18n="tool.6">Asesoría de Maquinaria</span>
+      </div>
+      <div class="toolbox-swatch"></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <span class="eyebrow" style="margin-bottom:0" data-i18n="strip.label">Trabajamos con marcas de:</span>
+    <span class="chip" data-i18n="strip.1">Salud</span>
+    <span class="chip" data-i18n="strip.2">Construcción</span>
+    <span class="chip" data-i18n="strip.3">Tecnología</span>
+    <span class="chip" data-i18n="strip.4">Retail</span>
+    <span class="chip" data-i18n="strip.5">Industrial</span>
+  </div>
+</section>
+
+<section class="pad" id="clientes" style="padding-top:60px; padding-bottom:60px;">
+  <div class="wrap">
+    <div class="eyebrow reveal" style="justify-content:center; margin-bottom:26px;" data-i18n="clients.eyebrow">Marcas que ya confían en nosotros</div>
+    <div class="logos-strip reveal">
+      <div class="logo-chip"><img src="assets/img/i02.webp" alt="Dulcecitos Emma" loading="lazy"></div>
+      <div class="logo-chip"><img src="assets/img/i03.webp" alt="Quintero & Guevara" loading="lazy"></div>
+      <div class="logo-chip"><img src="assets/img/i04.webp" alt="Anaiza Delicias Heladas" loading="lazy"></div>
+      <div class="logo-chip"><img src="assets/img/i05.webp" alt="YA Mechanics" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="servicios">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="services.eyebrow">Qué hacemos</div>
+      <h2 data-i18n="services.title">Todo lo que tu marca necesita, en un solo lugar.</h2>
+      <p data-i18n="services.lead">Seis frentes de trabajo, un mismo criterio: que cada pieza construya tu marca, no solo se vea bien.</p>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <span class="num">01</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 4l7 16 2-7 7-2z"/></svg></div>
+        <h3 data-i18n="services.s1.title">Diseño Gráfico</h3>
+        <p data-i18n="services.s1.desc">Identidad visual, branding, piezas digitales e impresas que hacen que tu marca se reconozca al instante.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">02</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3 data-i18n="services.s2.title">Gestión de Redes Sociales</h3>
+        <p data-i18n="services.s2.desc">Planificación de contenido, diseño de posts y estrategia para que tu marca crezca en cada plataforma.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">03</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/></svg></div>
+        <h3 data-i18n="services.s3.title">Marketing & Ventas</h3>
+        <p data-i18n="services.s3.desc">Estrategias de marketing digital y campañas orientadas a resultados medibles, no solo likes.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">04</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M7 6V4h10v2"/></svg></div>
+        <h3 data-i18n="services.s4.title">Publicidad Exterior</h3>
+        <p data-i18n="services.s4.desc">Vallas, carteles y señalización pensados para captar la atención en segundos.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">05</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 4h5l2 2h5v14H6z"/></svg></div>
+        <h3 data-i18n="services.s5.title">Uniformes Corporativos</h3>
+        <p data-i18n="services.s5.desc">Diseño y producción de uniformes que refuerzan la identidad de tu equipo y tu marca.</p>
+      </div>
+      <div class="service-card">
+        <span class="num">06</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="5" y="7" width="14" height="10" rx="1"/><path d="M8 7V4h8v3"/></svg></div>
+        <h3 data-i18n="services.s6.title">Asesoría de Maquinaria</h3>
+        <p data-i18n="services.s6.desc">Guía experta en plotters, láser y equipos de producción para tu taller o negocio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="proceso" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="process.eyebrow">Cómo trabajamos</div>
+      <h2 data-i18n="process.title">De la idea a la entrega, sin fricción.</h2>
+    </div>
+    <div class="process reveal">
+      <div class="process-step">
+        <span class="step-num">01</span>
+        <h4 data-i18n="process.1.title">Brief</h4>
+        <p data-i18n="process.1.desc">Nos cuentas tu marca, tu público y tu objetivo — sin importar en qué país estés.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">02</span>
+        <h4 data-i18n="process.2.title">Propuesta</h4>
+        <p data-i18n="process.2.desc">Te enviamos dirección creativa y cotización clara en dólares, sin sorpresas.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">03</span>
+        <h4 data-i18n="process.3.title">Diseño</h4>
+        <p data-i18n="process.3.desc">Trabajamos con revisiones ágiles hasta que la pieza sea exactamente lo que necesitas.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-num">04</span>
+        <h4 data-i18n="process.4.title">Entrega</h4>
+        <p data-i18n="process.4.desc">Recibes los archivos finales listos para usar, en el formato que tu equipo necesite.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="portafolio">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="portfolio.eyebrow">Portafolio</div>
+      <h2 data-i18n="portfolio.title">Proyectos que hablan por sí solos.</h2>
+    </div>
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all" data-i18n="portfolio.f0">Todos</button>
+      <button class="filter-btn" data-filter="diseno" data-i18n="portfolio.f1">Diseño</button>
+      <button class="filter-btn" data-filter="redes" data-i18n="portfolio.f2">Redes</button>
+    </div>
+    <div class="portfolio-grid reveal">
+      <div class="p-card real">
+        <img src="assets/img/i06.webp" alt="Logo — Dulcecitos Emma" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Logo — Dulcecitos Emma</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i07.webp" alt="Logo — Quintero & Guevara" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Logo — Quintero & Guevara</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i08.webp" alt="Logo — Anaiza Delicias Heladas" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Logo — Anaiza Delicias Heladas</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i09.webp" alt="Logo — YA Mechanics" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Logo — YA Mechanics</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i10.webp" alt="Selección de logos" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Selección de logos</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i11.webp" alt="Flyer — Tecnópolis" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Flyer — Tecnópolis</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i12.webp" alt="Flyer de producto — Mobiliario" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Flyer de producto — Mobiliario</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i13.webp" alt="Diseño personalizado — Cuaderno" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Diseño personalizado — Cuaderno</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i14.webp" alt="Historia IG — Estudio Maye" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Historia IG — Estudio Maye</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i15.webp" alt="Historia IG — Estudio Maye" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Historia IG — Estudio Maye</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i16.webp" alt="Historia IG — Magenta Regalos" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Historia IG — Magenta Regalos</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i17.webp" alt="Invitación digital — Magenta Regalos" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Invitación digital — Magenta Regalos</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i18.webp" alt="Post IG — Dulcecitos Emma" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Post IG — Dulcecitos Emma</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i19.webp" alt="Historia IG — Tecnópolis" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Historia IG — Tecnópolis</div></div>
+      </div>
+    
+      <div class="p-card real">
+        <img src="assets/img/i20.webp" alt="Tarjeta ilustrada — Día del Maestro" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Tarjeta ilustrada — Día del Maestro</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i21.webp" alt="Tarjeta de cumpleaños personalizada" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Tarjeta de cumpleaños personalizada</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i22.webp" alt="Logo — YA Mechanics (variante)" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Logo — YA Mechanics (variante)</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i23.webp" alt="Flyer promocional propio — Graphic Sosa" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="diseno">Diseño</div><div class="title">Flyer promocional propio — Graphic Sosa</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i24.webp" alt="Post IG — Dulcecitos Emma" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Post IG — Dulcecitos Emma</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i25.webp" alt="Post IG — Magenta Regalos" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Post IG — Magenta Regalos</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i26.webp" alt="Post IG — Magenta Regalos" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Post IG — Magenta Regalos</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i27.webp" alt="Post IG — Tecnópolis" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Post IG — Tecnópolis</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i28.webp" alt="Post IG — Delicias Burger" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Post IG — Delicias Burger</div></div>
+      </div>
+      <div class="p-card real">
+        <img src="assets/img/i29.webp" alt="Post IG — Delicias Burger" loading="lazy">
+        <div class="p-overlay"></div>
+        <div class="label"><div class="cat" data-cat="redes">Redes</div><div class="title">Post IG — Delicias Burger</div></div>
+      </div>
+    </div>
+    <div class="portfolio-note">
+      <span>📌</span>
+      <span data-i18n="portfolio.note">Todavía faltan piezas de Publicidad Exterior y Uniformes — cuando tengas fotos reales de esos proyectos, súbelas y las agregamos aquí.</span>
+    </div>
+  </div>
+</section>
+
+<section class="pad" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="why.eyebrow">Por qué Graphic Sosa</div>
+      <h2 data-i18n="why.title">Pensado para clientes que no están en Venezuela.</h2>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-card">
+        <h3>ES / EN</h3>
+        <p data-i18n="why.1">Atendemos en español e inglés, y adaptamos cada pieza al mercado al que va dirigida.</p>
+      </div>
+      <div class="why-card">
+        <h3>USD</h3>
+        <p data-i18n="why.2">Cotizaciones claras en dólares y facilidades de pago internacional, sin letra pequeña.</p>
+      </div>
+      <div class="why-card">
+        <h3>24H</h3>
+        <p data-i18n="why.3">Comunicación ágil por WhatsApp o correo, con tiempos de respuesta pensados para husos horarios distintos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</div>
+      <h2 data-i18n="faq.title">Antes de escribirnos, quizás ya respondimos tu duda.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q1">¿Cuánto tardan en responder un mensaje?</button>
+        <div class="faq-a"><p data-i18n="faq.a1">Normalmente respondemos en menos de 24 horas, sin importar tu huso horario. WhatsApp es el canal más rápido.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q2">¿Cómo puedo pagar desde otro país?</button>
+        <div class="faq-a"><p data-i18n="faq.a2">Trabajamos con cotizaciones en dólares y aceptamos pagos internacionales — lo conversamos según tu país al momento de cotizar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q3">¿Cuántas revisiones incluye un proyecto?</button>
+        <div class="faq-a"><p data-i18n="faq.a3">Cada proyecto incluye rondas de revisión hasta que quedes conforme con el resultado final — lo definimos juntos antes de empezar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q4">¿En qué formato entrego los archivos finales?</button>
+        <div class="faq-a"><p data-i18n="faq.a4">Entregamos en el formato que tu equipo necesite: PNG, JPG, PDF, o los archivos editables (PSD, AI) si tu plan los incluye.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q5">¿Trabajan con contrato o solo por WhatsApp?</button>
+        <div class="faq-a"><p data-i18n="faq.a5">Para proyectos grandes preparamos un acuerdo simple por escrito con alcance y tiempos. Para piezas puntuales, un acuerdo claro por WhatsApp o correo es suficiente.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" data-i18n="faq.q6">¿Pueden trabajar con clientes fuera de Venezuela?</button>
+        <div class="faq-a"><p data-i18n="faq.a6">Sí — de hecho es uno de nuestros enfoques principales. Atendemos en español e inglés, y coordinamos todo de forma 100% remota.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="blog">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="blog.eyebrow">Blog</div>
+      <h2 data-i18n="blog.title">Ideas, novedades y casos de marca.</h2>
+      <p data-i18n="blog.lead">Artículos publicados directo desde nuestro blog — sin recargar esta página.</p>
+    </div>
+    <div class="blog-grid reveal" id="blog-grid">
+      <div class="blog-empty" id="blog-empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        <h3 data-i18n="blog.empty.title">Todavía no hay artículos publicados</h3>
+        <p data-i18n="blog.empty.lead">En cuanto conectemos tu blog, los últimos artículos van a aparecer aquí automáticamente.</p>
+      </div>
+    </div>
+    <div class="blog-article-panel" id="blog-article-panel" hidden></div>
+  </div>
+</section>
+
+<section class="pad" id="nosotros">
+  <div class="wrap about-wrap reveal">
+    <div class="about-visual">
+      <img src="assets/img/i30.webp" alt="Graphic Sosa" style="width:70%;height:auto;position:relative;z-index:1;">
+    </div>
+    <div class="about-text">
+      <div class="eyebrow" data-i18n="about.eyebrow">Quiénes somos</div>
+      <h2 style="margin:14px 0 20px; font-size:2rem;" data-i18n="about.title">Un estudio creativo con base en Venezuela, trabajando sin fronteras.</h2>
+      <p data-i18n="about.p1">Graphic Sosa nació para resolver algo simple: que una marca no tenga que contratar cinco proveedores distintos para diseño, redes, publicidad y producción. Un equipo, una visión, todos los servicios.</p>
+      <p data-i18n="about.p2">Hoy trabajamos con negocios de distintos rubros — salud, construcción, tecnología, retail — y estamos listos para hacerlo con marcas en cualquier país.</p>
+      <div class="about-stats">
+        <div><strong>+6</strong><span data-i18n="about.stat1">Líneas de servicio</span></div>
+        <div><strong>100%</strong><span data-i18n="about.stat2">Remoto y flexible</span></div>
+        <div><strong>2</strong><span data-i18n="about.stat3">Idiomas de trabajo</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="contacto">
+  <div class="wrap">
+    <div class="contact-wrap reveal">
+      <div class="contact-info">
+        <div class="eyebrow" data-i18n="contact.eyebrow">Hablemos</div>
+        <h2 data-i18n="contact.title">Cuéntanos tu proyecto.</h2>
+        <p data-i18n="contact.lead">Sin importar el país o el huso horario, respondemos en menos de 24 horas.</p>
+        <div class="contact-channel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-8.6 8.4 8.6 8.6 0 01-4-1L3 20l1.2-5.3a8.4 8.4 0 1116.8-3.2z"/></svg>
+          <span data-i18n="contact.wa">WhatsApp: +58 424-2377576 / +58 424-3975185</span>
+        </div>
+        <div class="contact-channel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 6l9 7 9-7"/></svg>
+          <span data-i18n="contact.mail">ososa1924@gmail.com</span>
+        </div>
+        <div class="contact-channel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          <span>@graphicsosa</span>
+        </div>
+      </div>
+      <form id="contact-form">
+        <div class="form-row">
+          <input type="text" id="f-name" data-i18n-ph="contact.form.name" placeholder="Nombre" required>
+          <input type="email" id="f-email" data-i18n-ph="contact.form.email" placeholder="Correo" required>
+        </div>
+        <div class="form-row">
+          <input type="text" id="f-country" data-i18n-ph="contact.form.country" placeholder="País">
+          <select id="f-service">
+            <option value="" data-i18n="contact.form.service0">¿Qué necesitas?</option>
+            <option data-i18n="contact.form.service1">Diseño Gráfico</option>
+            <option data-i18n="contact.form.service2">Redes Sociales</option>
+            <option data-i18n="contact.form.service3">Marketing & Ventas</option>
+            <option data-i18n="contact.form.service4">Publicidad Exterior</option>
+            <option data-i18n="contact.form.service5">Uniformes</option>
+            <option data-i18n="contact.form.service6">Asesoría de Maquinaria</option>
+          </select>
+        </div>
+        <textarea id="f-msg" data-i18n-ph="contact.form.msg" placeholder="Cuéntanos brevemente tu proyecto..." required></textarea>
+        <button type="submit" class="btn btn-grad" style="justify-content:center;" data-i18n="contact.form.submit">Enviar mensaje</button>
+        <span class="form-note" data-i18n="contact.form.note">También puedes escribirnos directo por WhatsApp — respondemos más rápido ahí.</span>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-wrap">
+    <div class="brand">
+      <img src="assets/img/i01.webp" alt="Graphic Sosa" style="width:26px;height:auto;">
+      <span>GRAPHIC SOSA</span>
+    </div>
+    <div class="footer-links">
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#portafolio" data-i18n="nav.portfolio">Portafolio</a>
+      <a href="#blog" data-i18n="nav.blog">Blog</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </div>
+    <span class="form-note" data-i18n="footer.rights">© 2026 Graphic Sosa. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<div id="toast"></div>
+
+<script>
+const translations = {
+  es: {
+    'nav.services':'Servicios','nav.process':'Proceso','nav.portfolio':'Portafolio','nav.blog':'Blog','nav.faq':'FAQ','nav.about':'Nosotros','nav.contact':'Contacto','nav.cta':'Cotiza tu proyecto',
+    'hero.eyebrow':'Soluciones creativas para tu marca',
+    'hero.title':'Tu marca, <span class="grad-text">sin fronteras.</span>',
+    'hero.lead':'Diseñamos, gestionamos redes, creamos campañas y desarrollamos identidades de marca para negocios en Venezuela y en el resto del mundo. Un solo equipo, todos los servicios de marca.',
+    'hero.cta1':'Ver portafolio','hero.cta2':'Hablemos por WhatsApp',
+    'hero.tag1':'🌎 Clientes en 3+ países','hero.tag2':'🕒 Respuesta en 24h','hero.tag3':'💳 Pagos internacionales',
+    'tool.1':'Diseño Gráfico','tool.2':'Redes Sociales','tool.3':'Marketing & Ventas','tool.4':'Publicidad Exterior','tool.5':'Uniformes','tool.6':'Asesoría de Maquinaria',
+    'strip.label':'Trabajamos con marcas de:','strip.1':'Salud','strip.2':'Construcción','strip.3':'Tecnología','strip.4':'Retail','strip.5':'Industrial',
+    'clients.eyebrow':'Marcas que ya confían en nosotros',
+    'faq.eyebrow':'Preguntas frecuentes','faq.title':'Antes de escribirnos, quizás ya respondimos tu duda.',
+    'faq.q1':'¿Cuánto tardan en responder un mensaje?','faq.a1':'Normalmente respondemos en menos de 24 horas, sin importar tu huso horario. WhatsApp es el canal más rápido.',
+    'faq.q2':'¿Cómo puedo pagar desde otro país?','faq.a2':'Trabajamos con cotizaciones en dólares y aceptamos pagos internacionales — lo conversamos según tu país al momento de cotizar.',
+    'faq.q3':'¿Cuántas revisiones incluye un proyecto?','faq.a3':'Cada proyecto incluye rondas de revisión hasta que quedes conforme con el resultado final — lo definimos juntos antes de empezar.',
+    'faq.q4':'¿En qué formato entrego los archivos finales?','faq.a4':'Entregamos en el formato que tu equipo necesite: PNG, JPG, PDF, o los archivos editables (PSD, AI) si tu plan los incluye.',
+    'faq.q5':'¿Trabajan con contrato o solo por WhatsApp?','faq.a5':'Para proyectos grandes preparamos un acuerdo simple por escrito con alcance y tiempos. Para piezas puntuales, un acuerdo claro por WhatsApp o correo es suficiente.',
+    'faq.q6':'¿Pueden trabajar con clientes fuera de Venezuela?','faq.a6':'Sí — de hecho es uno de nuestros enfoques principales. Atendemos en español e inglés, y coordinamos todo de forma 100% remota.',
+    'services.eyebrow':'Qué hacemos','services.title':'Todo lo que tu marca necesita, en un solo lugar.','services.lead':'Seis frentes de trabajo, un mismo criterio: que cada pieza construya tu marca, no solo se vea bien.',
+    'services.s1.title':'Diseño Gráfico','services.s1.desc':'Identidad visual, branding, piezas digitales e impresas que hacen que tu marca se reconozca al instante.',
+    'services.s2.title':'Gestión de Redes Sociales','services.s2.desc':'Planificación de contenido, diseño de posts y estrategia para que tu marca crezca en cada plataforma.',
+    'services.s3.title':'Marketing & Ventas','services.s3.desc':'Estrategias de marketing digital y campañas orientadas a resultados medibles, no solo likes.',
+    'services.s4.title':'Publicidad Exterior','services.s4.desc':'Vallas, carteles y señalización pensados para captar la atención en segundos.',
+    'services.s5.title':'Uniformes Corporativos','services.s5.desc':'Diseño y producción de uniformes que refuerzan la identidad de tu equipo y tu marca.',
+    'services.s6.title':'Asesoría de Maquinaria','services.s6.desc':'Guía experta en plotters, láser y equipos de producción para tu taller o negocio.',
+    'process.eyebrow':'Cómo trabajamos','process.title':'De la idea a la entrega, sin fricción.',
+    'process.1.title':'Brief','process.1.desc':'Nos cuentas tu marca, tu público y tu objetivo — sin importar en qué país estés.',
+    'process.2.title':'Propuesta','process.2.desc':'Te enviamos dirección creativa y cotización clara en dólares, sin sorpresas.',
+    'process.3.title':'Diseño','process.3.desc':'Trabajamos con revisiones ágiles hasta que la pieza sea exactamente lo que necesitas.',
+    'process.4.title':'Entrega','process.4.desc':'Recibes los archivos finales listos para usar, en el formato que tu equipo necesite.',
+    'portfolio.eyebrow':'Portafolio','portfolio.title':'Proyectos que hablan por sí solos.',
+    'portfolio.f0':'Todos','portfolio.f1':'Diseño','portfolio.f2':'Redes','portfolio.f3':'Publicidad Exterior','portfolio.f4':'Uniformes',
+    'portfolio.c1':'Diseño','portfolio.t1':'Identidad de marca — Salud',
+    'portfolio.c2':'Redes','portfolio.t2':'Campaña mensual — Retail',
+    'portfolio.c3':'Publicidad Exterior','portfolio.t3':'Valla corporativa — Construcción',
+    'portfolio.c4':'Uniformes','portfolio.t4':'Uniformes industriales',
+    'portfolio.c5':'Diseño','portfolio.t5':'Rebranding — Tecnología',
+    'portfolio.c6':'Redes','portfolio.t6':'Estrategia digital — Salud',
+    'portfolio.note':'Estas tarjetas son plantillas de ejemplo. Reemplázalas con capturas reales de tus proyectos para mostrar tu trabajo — entre más específico el resultado (antes/después, foto en contexto), más confianza genera con clientes nuevos.',
+    'why.eyebrow':'Por qué Graphic Sosa','why.title':'Pensado para clientes que no están en Venezuela.',
+    'why.1':'Atendemos en español e inglés, y adaptamos cada pieza al mercado al que va dirigida.',
+    'why.2':'Cotizaciones claras en dólares y facilidades de pago internacional, sin letra pequeña.',
+    'why.3':'Comunicación ágil por WhatsApp o correo, con tiempos de respuesta pensados para husos horarios distintos.',
+    'blog.eyebrow':'Blog','blog.title':'Ideas, novedades y casos de marca.','blog.lead':'Artículos publicados directo desde nuestro blog — sin recargar esta página.',
+    'blog.empty.title':'Todavía no hay artículos publicados','blog.empty.lead':'En cuanto conectemos tu blog, los últimos artículos van a aparecer aquí automáticamente.',
+    'blog.readmore':'Leer artículo →','blog.error.title':'No pudimos cargar el blog','blog.error.lead':'Puede que el blog aún no tenga artículos públicos, o que la conexión falle por un momento. Intenta recargar la página.',
+    'about.eyebrow':'Quiénes somos','about.title':'Un estudio creativo con base en Venezuela, trabajando sin fronteras.',
+    'about.p1':'Graphic Sosa nació para resolver algo simple: que una marca no tenga que contratar cinco proveedores distintos para diseño, redes, publicidad y producción. Un equipo, una visión, todos los servicios.',
+    'about.p2':'Hoy trabajamos con negocios de distintos rubros — salud, construcción, tecnología, retail — y estamos listos para hacerlo con marcas en cualquier país.',
+    'about.stat1':'Líneas de servicio','about.stat2':'Remoto y flexible','about.stat3':'Idiomas de trabajo',
+    'contact.eyebrow':'Hablemos','contact.title':'Cuéntanos tu proyecto.','contact.lead':'Sin importar el país o el huso horario, respondemos en menos de 24 horas.',
+    'contact.wa':'WhatsApp: +58 424-2377576 / +58 424-3975185','contact.mail':'ososa1924@gmail.com',
+    'contact.form.name':'Nombre','contact.form.email':'Correo','contact.form.country':'País',
+    'contact.form.service0':'¿Qué necesitas?','contact.form.service1':'Diseño Gráfico','contact.form.service2':'Redes Sociales','contact.form.service3':'Marketing & Ventas','contact.form.service4':'Publicidad Exterior','contact.form.service5':'Uniformes','contact.form.service6':'Asesoría de Maquinaria',
+    'contact.form.msg':'Cuéntanos brevemente tu proyecto...','contact.form.submit':'Enviar mensaje',
+    'contact.form.note':'También puedes escribirnos directo por WhatsApp — respondemos más rápido ahí.',
+    'footer.rights':'© 2026 Graphic Sosa. Todos los derechos reservados.',
+    'toast.msg':'¡Listo! Abriendo WhatsApp con tu mensaje cargado — solo presiona enviar.'
+  },
+  en: {
+    'nav.services':'Services','nav.process':'Process','nav.portfolio':'Portfolio','nav.blog':'Blog','nav.faq':'FAQ','nav.about':'About','nav.contact':'Contact','nav.cta':'Get a quote',
+    'hero.eyebrow':'Creative solutions for your brand',
+    'hero.title':'Your brand, <span class="grad-text">without borders.</span>',
+    'hero.lead':'We design, manage social media, build campaigns and develop brand identities for businesses in Venezuela and around the world. One team, every brand service.',
+    'hero.cta1':'View portfolio','hero.cta2':"Let's talk on WhatsApp",
+    'hero.tag1':'🌎 Clients in 3+ countries','hero.tag2':'🕒 24h response time','hero.tag3':'💳 International payments',
+    'tool.1':'Graphic Design','tool.2':'Social Media','tool.3':'Marketing & Sales','tool.4':'Outdoor Advertising','tool.5':'Uniforms','tool.6':'Machinery Consulting',
+    'strip.label':'We work with brands in:','strip.1':'Healthcare','strip.2':'Construction','strip.3':'Technology','strip.4':'Retail','strip.5':'Industrial',
+    'clients.eyebrow':'Brands that already trust us',
+    'faq.eyebrow':'FAQ','faq.title':"Before you write to us, we may have already answered your question.",
+    'faq.q1':'How long does it take you to respond?','faq.a1':"We usually respond within 24 hours, no matter your time zone. WhatsApp is the fastest channel.",
+    'faq.q2':'How can I pay from another country?','faq.a2':"We quote in US dollars and accept international payments — we work out the details based on your country when quoting.",
+    'faq.q3':'How many revisions are included in a project?','faq.a3':"Every project includes revision rounds until you're happy with the final result — we define this together before starting.",
+    'faq.q4':'What format will I receive the final files in?','faq.a4':"We deliver in whatever format your team needs: PNG, JPG, PDF, or editable files (PSD, AI) if your plan includes them.",
+    'faq.q5':'Do you work with a contract or just WhatsApp?','faq.a5':"For larger projects we prepare a simple written agreement with scope and timelines. For one-off pieces, a clear agreement over WhatsApp or email is enough.",
+    'faq.q6':'Can you work with clients outside Venezuela?','faq.a6':"Yes — that's actually one of our main focuses. We work in Spanish and English, fully remote.",
+    'services.eyebrow':'What we do','services.title':'Everything your brand needs, in one place.','services.lead':'Six areas of work, one standard: every piece should build your brand, not just look good.',
+    'services.s1.title':'Graphic Design','services.s1.desc':'Visual identity, branding, digital and print pieces that make your brand instantly recognizable.',
+    'services.s2.title':'Social Media Management','services.s2.desc':'Content planning, post design and strategy to grow your brand on every platform.',
+    'services.s3.title':'Marketing & Sales','services.s3.desc':'Digital marketing strategies and campaigns built around measurable results, not just likes.',
+    'services.s4.title':'Outdoor Advertising','services.s4.desc':'Billboards, signage and displays designed to catch attention in seconds.',
+    'services.s5.title':'Corporate Uniforms','services.s5.desc':'Uniform design and production that reinforces your team and brand identity.',
+    'services.s6.title':'Machinery Consulting','services.s6.desc':'Expert guidance on plotters, laser cutters and production equipment for your shop or business.',
+    'process.eyebrow':'How we work','process.title':'From idea to delivery, without friction.',
+    'process.1.title':'Brief','process.1.desc':'Tell us about your brand, audience and goal — wherever you are.',
+    'process.2.title':'Proposal','process.2.desc':'We send creative direction and a clear quote in dollars, no surprises.',
+    'process.3.title':'Design','process.3.desc':'We work through agile revisions until the piece is exactly what you need.',
+    'process.4.title':'Delivery','process.4.desc':'You receive final files ready to use, in the format your team needs.',
+    'portfolio.eyebrow':'Portfolio','portfolio.title':'Projects that speak for themselves.',
+    'portfolio.f0':'All','portfolio.f1':'Design','portfolio.f2':'Social','portfolio.f3':'Outdoor Advertising','portfolio.f4':'Uniforms',
+    'portfolio.c1':'Design','portfolio.t1':'Brand identity — Healthcare',
+    'portfolio.c2':'Social','portfolio.t2':'Monthly campaign — Retail',
+    'portfolio.c3':'Outdoor Advertising','portfolio.t3':'Corporate billboard — Construction',
+    'portfolio.c4':'Uniforms','portfolio.t4':'Industrial uniforms',
+    'portfolio.c5':'Design','portfolio.t5':'Rebranding — Technology',
+    'portfolio.c6':'Social','portfolio.t6':'Digital strategy — Healthcare',
+    'portfolio.note':'These cards are example placeholders. Swap them for real screenshots of your projects — the more specific the result (before/after, photo in context), the more trust it builds with new clients.',
+    'why.eyebrow':'Why Graphic Sosa','why.title':'Built for clients outside Venezuela.',
+    'why.1':'We work in both Spanish and English, adapting every piece to the market it targets.',
+    'why.2':'Clear quotes in US dollars and international payment options, no fine print.',
+    'why.3':'Fast communication via WhatsApp or email, with response times built for different time zones.',
+    'blog.eyebrow':'Blog','blog.title':'Ideas, news and brand case studies.','blog.lead':'Articles published straight from our blog — no page reload needed.',
+    'blog.empty.title':'No articles published yet','blog.empty.lead':'Once your blog is connected, your latest articles will show up here automatically.',
+    'blog.readmore':'Read article →','blog.error.title':"We couldn't load the blog",'blog.error.lead':"The blog may not have public posts yet, or the connection failed for a moment. Try reloading the page.",
+    'about.eyebrow':'Who we are','about.title':'A creative studio based in Venezuela, working without borders.',
+    'about.p1':"Graphic Sosa was born to solve something simple: a brand shouldn't need five different vendors for design, social, advertising and production. One team, one vision, every service.",
+    'about.p2':'Today we work with businesses across industries — healthcare, construction, technology, retail — and we\'re ready to do the same with brands in any country.',
+    'about.stat1':'Service lines','about.stat2':'Remote & flexible','about.stat3':'Working languages',
+    'contact.eyebrow':"Let's talk",'contact.title':'Tell us about your project.','contact.lead':"No matter the country or time zone, we respond in under 24 hours.",
+    'contact.wa':'WhatsApp: +58 424-2377576 / +58 424-3975185','contact.mail':'ososa1924@gmail.com',
+    'contact.form.name':'Name','contact.form.email':'Email','contact.form.country':'Country',
+    'contact.form.service0':'What do you need?','contact.form.service1':'Graphic Design','contact.form.service2':'Social Media','contact.form.service3':'Marketing & Sales','contact.form.service4':'Outdoor Advertising','contact.form.service5':'Uniforms','contact.form.service6':'Machinery Consulting',
+    'contact.form.msg':'Tell us briefly about your project...','contact.form.submit':'Send message',
+    'contact.form.note':"You can also message us directly on WhatsApp — we respond faster there.",
+    'footer.rights':'© 2026 Graphic Sosa. All rights reserved.',
+    'toast.msg':"Thanks! Your message was received. We'll be in touch soon — or message us on WhatsApp now."
+  }
+};
+
+function applyLang(lang){
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    if(translations[lang][key]) el.innerHTML = translations[lang][key];
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{
+    const key = el.getAttribute('data-i18n-ph');
+    if(translations[lang][key]) el.setAttribute('placeholder', translations[lang][key]);
+  });
+  document.getElementById('btn-es').classList.toggle('active', lang==='es');
+  document.getElementById('btn-en').classList.toggle('active', lang==='en');
+  if(typeof renderBlog === 'function'){
+    renderBlog(window.LAST_BLOGGER_ENTRIES || []);
+    if(typeof closeArticle === 'function') closeArticle();
+  }
+}
+document.getElementById('btn-es').addEventListener('click', ()=>applyLang('es'));
+document.getElementById('btn-en').addEventListener('click', ()=>applyLang('en'));
+
+// portfolio filter — uses data-filter / data-cat so it works in both languages
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.getAttribute('data-filter');
+    document.querySelectorAll('.p-card').forEach(card=>{
+      const catEl = card.querySelector('.cat[data-cat]');
+      const cat = catEl ? catEl.getAttribute('data-cat') : null;
+      card.style.display = (filter==='all' || cat===filter) ? 'flex' : 'none';
+    });
+  });
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    btn.closest('.faq-item').classList.toggle('open');
+  });
+});
+
+// scroll reveal — one IntersectionObserver, no scroll listeners (cheap)
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+}
+
+// ---------- BLOG (artículos propios + Blogger opcional) ----------
+// 1. Crea tu blog gratis en https://www.blogger.com (opcional)
+// 2. Pega la URL aquí abajo (ej: "https://tublog.blogspot.com")
+// 3. Los artículos de Blogger van a aparecer junto a los que ya tienes aquí abajo.
+const BLOG_URL = ""; // <-- PEGA AQUÍ LA URL DE TU BLOGGER (opcional)
+
+const LOCAL_POSTS = {
+  es: [{
+    id: 'frases-peliculas',
+    date: '25 jul 2026',
+    title: '5 frases de películas que le pueden enseñar algo a tu marca',
+    summary: 'A veces la mejor lección de branding no viene de un libro de marketing, sino del cine. Aquí van cinco frases que casi todos reconocen.',
+    body: [
+      'A veces la mejor lección de branding no viene de un libro de marketing, sino de una película que ya viste diez veces. Aquí van cinco frases que casi todo el mundo reconoce, y lo que le pueden enseñar a una marca que quiere crecer.',
+      { quote: '"¡Hasta el infinito y más allá!"', movie: 'Toy Story' },
+      'Buzz Lightyear no se conformaba con el cuarto de Andy. Tu marca tampoco tiene que conformarse con un solo país: si ya construiste algo sólido en Venezuela, el siguiente paso natural es pensar en clientes en otras partes del mundo. La ambición sin foco no sirve de mucho, pero el foco sin ambición te deja estancado.',
+      { quote: '"Sigue nadando."', movie: 'Buscando a Nemo' },
+      'Dory lo resume mejor que cualquier gurú de marketing: la constancia gana. Publicar una vez y desaparecer no construye marca. Publicar seguido, aunque el resultado no sea inmediato, es lo que hace que un negocio se vuelva reconocible con el tiempo.',
+      { quote: '"Que la Fuerza te acompañe."', movie: 'Star Wars' },
+      'Esta frase funciona porque tiene un propósito detrás — no es solo una despedida, es una forma de identificar a quién la dice. Una marca fuerte también necesita ese "algo" reconocible: un tono, una frase, un color, algo que la gente identifique incluso sin ver el logo.',
+      { quote: '"Si lo construyes, él vendrá."', movie: 'Field of Dreams' },
+      'Invertir en tu marca — un logo bien hecho, un sitio web, presencia constante en redes — antes de tener todos los resultados garantizados, da miedo. Pero es exactamente lo que separa a los negocios que crecen de los que se quedan esperando el cliente perfecto para empezar a verse profesionales.',
+      { quote: '"No hay lugar como el hogar."', movie: 'El Mago de Oz' },
+      'Tus raíces no son algo que ocultar para verte "más internacional" — son parte de tu historia. Ser una marca venezolana que ahora atiende clientes en otros países no es una debilidad, es parte de lo que te hace distinto.',
+      'Cinco frases, cinco recordatorios simples: piensa en grande, sé constante, ten una voz propia, invierte antes de tener pruebas, y no escondas de dónde vienes. Si quieres ayuda para construir esa marca — logo, redes, sitio web o todo junto — ya sabes dónde encontrarnos.'
+    ]
+  }],
+  en: [{
+    id: 'frases-peliculas',
+    date: 'Jul 25, 2026',
+    title: '5 movie lines that can teach your brand something',
+    summary: "Sometimes the best branding lesson doesn't come from a marketing book, but from a movie you've already seen ten times.",
+    body: [
+      "Sometimes the best branding lesson doesn't come from a marketing book, but from a movie you've already seen ten times. Here are five lines almost everyone recognizes, and what they can teach a brand trying to grow.",
+      { quote: '"To infinity... and beyond!"', movie: 'Toy Story' },
+      "Buzz Lightyear didn't settle for Andy's room. Your brand doesn't have to settle for one country either: if you've already built something solid at home, the natural next step is thinking about clients elsewhere. Ambition without focus doesn't get you far, but focus without ambition keeps you stuck.",
+      { quote: '"Just keep swimming."', movie: 'Finding Nemo' },
+      "Dory sums it up better than most marketing gurus: consistency wins. Posting once and disappearing doesn't build a brand. Showing up regularly, even before the results are visible, is what makes a business recognizable over time.",
+      { quote: '"May the Force be with you."', movie: 'Star Wars' },
+      "This line works because there's a purpose behind it — it's not just a goodbye, it's a way of identifying who's saying it. A strong brand needs that same recognizable 'something': a tone, a phrase, a color, anything people identify even without seeing the logo.",
+      { quote: '"If you build it, he will come."', movie: 'Field of Dreams' },
+      "Investing in your brand — a well-made logo, a website, consistent presence on social media — before every result is guaranteed is scary. But it's exactly what separates businesses that grow from the ones still waiting for the perfect client before they start looking professional.",
+      { quote: '"There\'s no place like home."', movie: 'The Wizard of Oz' },
+      "Your roots aren't something to hide to look 'more international' — they're part of your story. Being a brand that now serves clients in other countries isn't a weakness, it's part of what makes you different.",
+      "Five lines, five simple reminders: think big, stay consistent, have your own voice, invest before you have proof, and don't hide where you come from. If you want help building that brand — logo, social media, website or all of it — you know where to find us."
+    ]
+  }]
+};
+
+function stripHtml(html){
+  const tmp = document.createElement('div');
+  tmp.innerHTML = html;
+  return (tmp.textContent || tmp.innerText || '').trim();
+}
+
+function openArticle(id){
+  const lang = document.documentElement.lang || 'es';
+  const post = LOCAL_POSTS[lang].find(p=>p.id===id) || LOCAL_POSTS.es.find(p=>p.id===id);
+  if(!post) return;
+  const panel = document.getElementById('blog-article-panel');
+  const bodyHtml = post.body.map(block=>{
+    if(typeof block === 'string') return `<p>${block}</p>`;
+    return `<div class="art-quote">${block.quote} <span style="color:var(--text-muted); font-weight:400; font-size:0.85rem;">— ${block.movie}</span></div>`;
+  }).join('');
+  panel.innerHTML = `
+    <button class="close-btn" id="close-article" aria-label="Cerrar">✕</button>
+    <span class="art-date">${post.date}</span>
+    <h2>${post.title}</h2>
+    <div class="art-body">${bodyHtml}</div>
+  `;
+  panel.hidden = false;
+  document.getElementById('close-article').addEventListener('click', closeArticle);
+  panel.scrollIntoView({behavior:'smooth', block:'start'});
+}
+function closeArticle(){
+  const panel = document.getElementById('blog-article-panel');
+  panel.hidden = true;
+  panel.innerHTML = '';
+}
+
+function renderBlog(bloggerEntries){
+  bloggerEntries = bloggerEntries || [];
+  const grid = document.getElementById('blog-grid');
+  const lang = document.documentElement.lang || 'es';
+
+  const localCards = LOCAL_POSTS[lang].map(post=>`
+    <div class="blog-card local" onclick="openArticle('${post.id}')">
+      <div class="thumb-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+      <div class="blog-body">
+        <span class="blog-date">${post.date}</span>
+        <h3>${post.title}</h3>
+        <p>${post.summary}</p>
+        <span class="blog-link">${translations[lang]['blog.readmore']}</span>
+      </div>
+    </div>`);
+
+  const bloggerCards = bloggerEntries.slice(0,6).map(entry=>{
+    const title = entry.title ? stripHtml(entry.title.$t) : '';
+    const summaryRaw = entry.summary ? entry.summary.$t : (entry.content ? entry.content.$t : '');
+    const summary = stripHtml(summaryRaw).slice(0,140) + '…';
+    const link = (entry.link.find(l=>l.rel==='alternate') || entry.link[0]).href;
+    const date = entry.published ? new Date(entry.published.$t).toLocaleDateString(lang==='es'?'es-ES':'en-US', {year:'numeric', month:'short', day:'numeric'}) : '';
+    const thumb = entry.media$thumbnail ? entry.media$thumbnail.url.replace(/\/s72-c\//,'/s400/') : null;
+    const media = thumb
+      ? `<img class="thumb" src="${thumb}" alt="${title}" loading="lazy">`
+      : `<div class="thumb-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>`;
+    return `<a class="blog-card" href="${link}" target="_blank" rel="noopener noreferrer">
+      ${media}
+      <div class="blog-body">
+        <span class="blog-date">${date}</span>
+        <h3>${title}</h3>
+        <p>${summary}</p>
+        <span class="blog-link">${translations[lang]['blog.readmore']}</span>
+      </div>
+    </a>`;
+  });
+
+  grid.innerHTML = localCards.concat(bloggerCards).join('');
+}
+
+function loadBlogPosts(){
+  renderBlog([]); // muestra los artículos propios de una vez
+  if(!BLOG_URL) return; // sin blog de Blogger conectado, se queda solo con los propios
+  const script = document.createElement('script');
+  script.src = `${BLOG_URL.replace(/\/$/,'')}/feeds/posts/default?alt=json-in-script&max-results=6&callback=__onBloggerData`;
+  script.onerror = function(){ /* si falla Blogger, los artículos propios ya están visibles */ };
+  document.body.appendChild(script);
+}
+window.__onBloggerData = function(data){
+  const entries = (data && data.feed && data.feed.entry) ? data.feed.entry : [];
+  window.LAST_BLOGGER_ENTRIES = entries;
+  renderBlog(entries);
+};
+loadBlogPosts();
+
+// contact form
+document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  const lang = document.documentElement.lang || 'es';
+  const nombre = document.getElementById('f-name').value.trim();
+  const correo = document.getElementById('f-email').value.trim();
+  const pais = document.getElementById('f-country').value.trim() || (lang==='es' ? 'No indicado' : 'Not specified');
+  const sel = document.getElementById('f-service');
+  const srv = sel.value ? sel.options[sel.selectedIndex].text : (lang==='es' ? 'Sin definir' : 'Not set');
+  const msg = document.getElementById('f-msg').value.trim();
+  const texto = (lang==='es'
+    ? 'Hola Graphic Sosa 👋\n\nNombre: ' + nombre + '\nCorreo: ' + correo + '\nPaís: ' + pais + '\nServicio: ' + srv + '\n\n' + msg
+    : 'Hi Graphic Sosa 👋\n\nName: ' + nombre + '\nEmail: ' + correo + '\nCountry: ' + pais + '\nService: ' + srv + '\n\n' + msg);
+  window.open('https://wa.me/584242377576?text=' + encodeURIComponent(texto), '_blank', 'noopener');
+  const toast = document.getElementById('toast');
+  toast.textContent = translations[lang]['toast.wa'];
+  toast.classList.add('show');
+  setTimeout(()=>toast.classList.remove('show'), 4200);
+  this.reset();
+});
+</script>
+
+</body>
+</html>

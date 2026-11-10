@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://graphicsosa.vercel.app/sitemap.xml
