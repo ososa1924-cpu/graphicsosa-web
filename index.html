@@ -44,24 +44,24 @@
   ]
 }
 </script>
-<link rel="icon" type="image/png" href="assets/img/i01.webp">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#070a1a;
-    --bg-panel:#10142c;
-    --bg-panel-2:#161b3d;
+    --bg:#0c0f14;
+    --bg-panel:#131822;
+    --bg-panel-2:#182030;
     --line:rgba(255,255,255,0.09);
     --text:#f5f4ff;
     --text-muted:#8b91b8;
-    --teal:#2dd9c8;
-    --purple:#8b5cf6;
-    --pink:#ec4899;
-    --orange:#fb8b3f;
-    --grad: linear-gradient(90deg, var(--teal), var(--purple) 45%, var(--pink) 70%, var(--orange));
-    --grad-soft: linear-gradient(135deg, rgba(45,217,200,0.15), rgba(139,92,246,0.15), rgba(236,72,153,0.15));
+    --teal:#0D6EFD;
+    --purple:#1F6BFF;
+    --pink:#4C8DFF;
+    --orange:#86B6FF;
+    --grad: linear-gradient(90deg, #0D6EFD, #1F6BFF 45%, #4C8DFF 70%, #86B6FF);
+    --grad-soft: linear-gradient(135deg, rgba(13,110,253,0.18), rgba(31,107,255,0.15), rgba(134,182,255,0.15));
     --radius: 18px;
     --maxw: 1180px;
   }
@@ -110,10 +110,10 @@
     will-change:transform;
     opacity:0.5;
   }
-  .blob-1{width:640px; height:640px; top:-220px; right:-140px; background:radial-gradient(circle, rgba(139,92,246,0.45), transparent 70%); animation:drift1 26s ease-in-out infinite alternate;}
-  .blob-2{width:520px; height:520px; top:20%; left:-180px; background:radial-gradient(circle, rgba(45,217,200,0.35), transparent 70%); animation:drift2 32s ease-in-out infinite alternate;}
-  .blob-3{width:560px; height:560px; bottom:-200px; right:10%; background:radial-gradient(circle, rgba(236,72,153,0.30), transparent 70%); animation:drift3 22s ease-in-out infinite alternate;}
-  .blob-4{width:420px; height:420px; bottom:10%; left:20%; background:radial-gradient(circle, rgba(251,139,63,0.22), transparent 70%); animation:drift1 29s ease-in-out infinite alternate-reverse;}
+  .blob-1{width:640px; height:640px; top:-220px; right:-140px; background:radial-gradient(circle, rgba(31,107,255,0.45), transparent 70%); animation:drift1 26s ease-in-out infinite alternate;}
+  .blob-2{width:520px; height:520px; top:20%; left:-180px; background:radial-gradient(circle, rgba(13,110,253,0.35), transparent 70%); animation:drift2 32s ease-in-out infinite alternate;}
+  .blob-3{width:560px; height:560px; bottom:-200px; right:10%; background:radial-gradient(circle, rgba(76,141,255,0.30), transparent 70%); animation:drift3 22s ease-in-out infinite alternate;}
+  .blob-4{width:420px; height:420px; bottom:10%; left:20%; background:radial-gradient(circle, rgba(134,182,255,0.22), transparent 70%); animation:drift1 29s ease-in-out infinite alternate-reverse;}
   @keyframes drift1{from{transform:translate(0,0) scale(1);} to{transform:translate(-60px,50px) scale(1.12);}}
   @keyframes drift2{from{transform:translate(0,0) scale(1);} to{transform:translate(70px,-40px) scale(1.08);}}
   @keyframes drift3{from{transform:translate(0,0) scale(1);} to{transform:translate(-40px,-60px) scale(1.1);}}
@@ -185,7 +185,7 @@
     white-space:nowrap;
   }
   .btn-grad{background:var(--grad); color:#080a18;}
-  .btn-grad:hover{transform:translateY(-2px); box-shadow:0 10px 30px -8px rgba(236,72,153,0.5);}
+  .btn-grad:hover{transform:translateY(-2px); box-shadow:0 10px 30px -8px rgba(76,141,255,0.5);}
   .btn-ghost{border-color:var(--line); color:var(--text);}
   .btn-ghost:hover{border-color:rgba(255,255,255,0.3);}
   .menu-btn{display:none; background:none;border:none; color:var(--text); cursor:pointer;}
@@ -585,7 +585,7 @@
 <header>
   <nav class="wrap">
     <div class="brand">
-      <img src="assets/img/i01.webp" alt="Graphic Sosa" style="width:34px;height:auto;">
+      <img src="assets/bombillo.png" alt="Bombillo Graphic Sosa" style="width:34px;height:auto;">
       <span>GRAPHIC SOSA</span>
     </div>
     <ul class="nav-links">
@@ -976,7 +976,7 @@
 <section class="pad" id="nosotros">
   <div class="wrap about-wrap reveal">
     <div class="about-visual">
-      <img src="assets/img/i30.webp" alt="Graphic Sosa" style="width:70%;height:auto;position:relative;z-index:1;">
+      <div style="display:flex;align-items:center;gap:18px;position:relative;z-index:1;"><img src="assets/bombillo.png" alt="Bombillo Graphic Sosa" style="width:118px;height:auto;filter:drop-shadow(0 18px 44px rgba(13,110,253,0.45));"><div style="font-family:Sora,sans-serif;font-weight:800;font-size:2.7rem;letter-spacing:-0.02em;color:var(--text);">GRAPHIC <span class="grad-text">SOSA</span></div></div>
     </div>
     <div class="about-text">
       <div class="eyebrow" data-i18n="about.eyebrow">Quiénes somos</div>
@@ -1040,7 +1040,7 @@
 <footer>
   <div class="wrap footer-wrap">
     <div class="brand">
-      <img src="assets/img/i01.webp" alt="Graphic Sosa" style="width:26px;height:auto;">
+      <img src="assets/bombillo.png" alt="Bombillo Graphic Sosa" style="width:26px;height:auto;">
       <span>GRAPHIC SOSA</span>
     </div>
     <div class="footer-links">
