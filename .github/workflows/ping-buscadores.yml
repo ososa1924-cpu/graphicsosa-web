@@ -1,0 +1,27 @@
+name: ping-buscadores
+on:
+  push:
+    branches: [master]
+    paths:
+      - "index.html"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer clave IndexNow
+        id: key
+        run: |
+          KEY=$(ls *.txt | head -1 | sed 's/\.txt$//')
+          echo "key=$KEY" >> $GITHUB_OUTPUT
+      - name: Avisar a Bing/Yandex/Seznam/Naver
+        run: |
+          KEY="${{ steps.key.outputs.key }}"
+          curl -s -o /dev/null -w "%{http_code}\n" -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"graphicsosa-web.vercel.app\",\"key\":\"$KEY\",\"keyLocation\":\"https://graphicsosa-web.vercel.app/$KEY.txt\",\"urlList\":[\"https://graphicsosa-web.vercel.app/\"]}"
