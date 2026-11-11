@@ -25,7 +25,7 @@ web/
 ## Antes de conectar un dominio propio
 
 - Actualizar `canonical`, `og:image`, `og:url`, `twitter:image`, JSON-LD `"url"` y `robots.txt`
-  con el dominio final (4 lugares, buscar `graphicsosa.vercel.app`).
+  con el dominio final (4 lugares, buscar `graphicsosa-web.vercel.app`).
 
 ## Notas técnicas
 
