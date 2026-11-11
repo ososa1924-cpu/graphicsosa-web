@@ -85,7 +85,7 @@
     font-size:0.72rem;
     letter-spacing:0.14em;
     text-transform:uppercase;
-    color:var(--teal);
+    color:#4C8DFF;
     display:flex;
     align-items:center;
     gap:10px;
@@ -607,6 +607,7 @@
   </nav>
 </header>
 
+<main>
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
@@ -734,22 +735,22 @@
     <div class="process reveal">
       <div class="process-step">
         <span class="step-num">01</span>
-        <h4 data-i18n="process.1.title">Brief</h4>
+        <h3 data-i18n="process.1.title">Brief</h3>
         <p data-i18n="process.1.desc">Nos cuentas tu marca, tu público y tu objetivo — sin importar en qué país estés.</p>
       </div>
       <div class="process-step">
         <span class="step-num">02</span>
-        <h4 data-i18n="process.2.title">Propuesta</h4>
+        <h3 data-i18n="process.2.title">Propuesta</h3>
         <p data-i18n="process.2.desc">Te enviamos dirección creativa y cotización clara en dólares, sin sorpresas.</p>
       </div>
       <div class="process-step">
         <span class="step-num">03</span>
-        <h4 data-i18n="process.3.title">Diseño</h4>
+        <h3 data-i18n="process.3.title">Diseño</h3>
         <p data-i18n="process.3.desc">Trabajamos con revisiones ágiles hasta que la pieza sea exactamente lo que necesitas.</p>
       </div>
       <div class="process-step">
         <span class="step-num">04</span>
-        <h4 data-i18n="process.4.title">Entrega</h4>
+        <h3 data-i18n="process.4.title">Entrega</h3>
         <p data-i18n="process.4.desc">Recibes los archivos finales listos para usar, en el formato que tu equipo necesite.</p>
       </div>
     </div>
@@ -1019,7 +1020,7 @@
         </div>
         <div class="form-row">
           <input type="text" id="f-country" data-i18n-ph="contact.form.country" placeholder="País">
-          <select id="f-service">
+          <select id="f-service" aria-label="¿Qué servicio necesitas?">
             <option value="" data-i18n="contact.form.service0">¿Qué necesitas?</option>
             <option data-i18n="contact.form.service1">Diseño Gráfico</option>
             <option data-i18n="contact.form.service2">Redes Sociales</option>
@@ -1036,6 +1037,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap footer-wrap">
