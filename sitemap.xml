@@ -1,9 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://graphicsosa-web.vercel.app/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/errores-menu-restaurante.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/errores-menu-restaurante.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/errores-menu-restaurante.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/errores-menu-restaurante.html"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/logo-clinicas-consultorios.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/logo-clinicas-consultorios.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/logo-clinicas-consultorios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/logo-clinicas-consultorios.html"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/cuanto-cuesta-logo.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/cuanto-cuesta-logo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/cuanto-cuesta-logo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/cuanto-cuesta-logo.html"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/frases-peliculas.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/frases-peliculas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/frases-peliculas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/frases-peliculas.html"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/en/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/en/errores-menu-restaurante.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/errores-menu-restaurante.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/errores-menu-restaurante.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/errores-menu-restaurante.html"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/en/logo-clinicas-consultorios.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/logo-clinicas-consultorios.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/logo-clinicas-consultorios.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/logo-clinicas-consultorios.html"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/en/cuanto-cuesta-logo.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/cuanto-cuesta-logo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/cuanto-cuesta-logo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/cuanto-cuesta-logo.html"/>
+  </url>
+  <url>
+    <loc>https://graphicsosa-web.vercel.app/blog/en/frases-peliculas.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://graphicsosa-web.vercel.app/blog/frases-peliculas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://graphicsosa-web.vercel.app/blog/en/frases-peliculas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://graphicsosa-web.vercel.app/blog/frases-peliculas.html"/>
   </url>
 </urlset>

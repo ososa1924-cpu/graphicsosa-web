@@ -27,20 +27,88 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Graphic Sosa",
-  "description": "Estudio creativo: diseño gráfico, gestión de redes sociales, marketing, publicidad exterior, uniformes corporativos y asesoría de maquinaria.",
-  "email": "ososa1924@gmail.com",
-  "telephone": "+58-424-2377576",
-  "areaServed": ["Venezuela","Latin America","International"],
-  "sameAs": ["https://www.instagram.com/graphicsosa"], "url": "https://graphicsosa-web.vercel.app/",
-  "makesOffer": [
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Diseño Gráfico"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gestión de Redes Sociales"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Marketing y Ventas"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Publicidad Exterior"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Uniformes Corporativos"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Asesoría de Maquinaria"}}
+  "@graph": [
+    {
+      "@type": ["ProfessionalService", "LocalBusiness"],
+      "@id": "https://graphicsosa-web.vercel.app/#organizacion",
+      "name": "Graphic Sosa",
+      "description": "Estudio creativo: diseño gráfico, gestión de redes sociales, marketing, publicidad exterior, uniformes corporativos y asesoría de maquinaria.",
+      "email": "ososa1924@gmail.com",
+      "telephone": "+58-424-2377576",
+      "url": "https://graphicsosa-web.vercel.app/",
+      "image": "https://graphicsosa-web.vercel.app/assets/og-image.jpg",
+      "logo": "https://graphicsosa-web.vercel.app/assets/favicon.png",
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Maracay",
+        "addressRegion": "Aragua",
+        "addressCountry": "VE"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Maracay" },
+        { "@type": "AdministrativeArea", "name": "Aragua" },
+        { "@type": "Country", "name": "Venezuela" }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/graphicsosa",
+        "https://wa.me/584242377576"
+      ],
+      "knowsLanguage": ["es", "en"],
+      "makesOffer": [
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Diseño Gráfico"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gestión de Redes Sociales"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Marketing y Ventas"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Publicidad Exterior"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Uniformes Corporativos"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Asesoría de Maquinaria"}}
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://graphicsosa-web.vercel.app/#sitio",
+      "url": "https://graphicsosa-web.vercel.app/",
+      "name": "Graphic Sosa",
+      "inLanguage": "es-VE",
+      "publisher": { "@id": "https://graphicsosa-web.vercel.app/#organizacion" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://graphicsosa-web.vercel.app/#preguntas",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tardan en responder un mensaje?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Normalmente respondemos en menos de 24 horas, sin importar tu huso horario. WhatsApp es el canal más rápido." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo puedo pagar desde otro país?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos con cotizaciones en dólares y aceptamos pagos internacionales — lo conversamos según tu país al momento de cotizar." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuántas revisiones incluye un proyecto?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cada proyecto incluye rondas de revisión hasta que quedes conforme con el resultado final — lo definimos juntos antes de empezar." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué formato entrego los archivos finales?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Entregamos en el formato que tu equipo necesite: PNG, JPG, PDF, o los archivos editables (PSD, AI) si tu plan los incluye." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajan con contrato o solo por WhatsApp?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Para proyectos grandes preparamos un acuerdo simple por escrito con alcance y tiempos. Para piezas puntuales, un acuerdo claro por WhatsApp o correo es suficiente." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Pueden trabajar con clientes fuera de Venezuela?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sí — de hecho es uno de nuestros enfoques principales. Atendemos en español e inglés, y coordinamos todo de forma 100% remota." }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -400,6 +468,7 @@
   .blog-card{
     background:var(--bg-panel); border:1px solid var(--line); border-radius:var(--radius);
     overflow:hidden; display:flex; flex-direction:column; transition:transform .25s var(--ease-out), border-color .25s ease;
+    text-decoration:none; color:inherit;
   }
   .blog-card:hover{transform:translateY(-6px); border-color:rgba(255,255,255,0.2);}
   .blog-card .thumb{width:100%; aspect-ratio:16/9; object-fit:cover; background:var(--bg-panel-2);}
@@ -960,13 +1029,13 @@
     <div class="section-head reveal">
       <div class="eyebrow" data-i18n="blog.eyebrow">Blog</div>
       <h2 data-i18n="blog.title">Ideas, novedades y casos de marca.</h2>
-      <p data-i18n="blog.lead">Artículos publicados directo desde nuestro blog — sin recargar esta página.</p>
+      <p data-i18n="blog.lead">Artículos con URL propia, escritos por nosotros. Haz clic para leerlos completos.</p>
     </div>
     <div class="blog-grid reveal" id="blog-grid">
       <div class="blog-empty" id="blog-empty">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
         <h3 data-i18n="blog.empty.title">Todavía no hay artículos publicados</h3>
-        <p data-i18n="blog.empty.lead">En cuanto conectemos tu blog, los últimos artículos van a aparecer aquí automáticamente.</p>
+        <p data-i18n="blog.empty.lead">Estamos escribiendo el siguiente. Mientras tanto, estos tres cubren lo que más nos preguntan.</p>
       </div>
     </div>
     <div class="blog-article-panel" id="blog-article-panel" hidden></div>
@@ -1100,8 +1169,8 @@ const translations = {
     'why.1':'Atendemos en español e inglés, y adaptamos cada pieza al mercado al que va dirigida.',
     'why.2':'Cotizaciones claras en dólares y facilidades de pago internacional, sin letra pequeña.',
     'why.3':'Comunicación ágil por WhatsApp o correo, con tiempos de respuesta pensados para husos horarios distintos.',
-    'blog.eyebrow':'Blog','blog.title':'Ideas, novedades y casos de marca.','blog.lead':'Artículos publicados directo desde nuestro blog — sin recargar esta página.',
-    'blog.empty.title':'Todavía no hay artículos publicados','blog.empty.lead':'En cuanto conectemos tu blog, los últimos artículos van a aparecer aquí automáticamente.',
+    'blog.eyebrow':'Blog','blog.title':'Ideas, novedades y casos de marca.','blog.lead':'Artículos con URL propia, escritos por nosotros. Haz clic para leerlos completos.',
+    'blog.empty.title':'Todavía no hay artículos publicados','blog.empty.lead':'Estamos escribiendo el siguiente. Mientras tanto, estos tres cubren lo que más nos preguntan.',
     'blog.readmore':'Leer artículo →','blog.error.title':'No pudimos cargar el blog','blog.error.lead':'Puede que el blog aún no tenga artículos públicos, o que la conexión falle por un momento. Intenta recargar la página.',
     'about.eyebrow':'Quiénes somos','about.title':'Un estudio creativo con base en Venezuela, trabajando sin fronteras.',
     'about.p1':'Graphic Sosa nació para resolver algo simple: que una marca no tenga que contratar cinco proveedores distintos para diseño, redes, publicidad y producción. Un equipo, una visión, todos los servicios.',
@@ -1158,8 +1227,8 @@ const translations = {
     'why.1':'We work in both Spanish and English, adapting every piece to the market it targets.',
     'why.2':'Clear quotes in US dollars and international payment options, no fine print.',
     'why.3':'Fast communication via WhatsApp or email, with response times built for different time zones.',
-    'blog.eyebrow':'Blog','blog.title':'Ideas, news and brand case studies.','blog.lead':'Articles published straight from our blog — no page reload needed.',
-    'blog.empty.title':'No articles published yet','blog.empty.lead':'Once your blog is connected, your latest articles will show up here automatically.',
+    'blog.eyebrow':'Blog','blog.title':'Ideas, news and brand case studies.','blog.lead':'Articles with their own URL, written by us. Click to read the full piece.',
+    'blog.empty.title':'No articles published yet','blog.empty.lead':'We are writing the next one. Meanwhile, these three cover what we get asked most.',
     'blog.readmore':'Read article →','blog.error.title':"We couldn't load the blog",'blog.error.lead':"The blog may not have public posts yet, or the connection failed for a moment. Try reloading the page.",
     'about.eyebrow':'Who we are','about.title':'A creative studio based in Venezuela, working without borders.',
     'about.p1':"Graphic Sosa was born to solve something simple: a brand shouldn't need five different vendors for design, social, advertising and production. One team, one vision, every service.",
@@ -1414,7 +1483,7 @@ function renderBlog(bloggerEntries){
   const lang = document.documentElement.lang || 'es';
 
   const localCards = LOCAL_POSTS[lang].map(post=>`
-    <div class="blog-card local" onclick="openArticle('${post.id}')">
+    <a class="blog-card local" href="blog/${lang==='en'?'en/':''}${post.id}.html">
       <div class="thumb-fallback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
       <div class="blog-body">
         <span class="blog-date">${post.date}</span>
@@ -1422,7 +1491,7 @@ function renderBlog(bloggerEntries){
         <p>${post.summary}</p>
         <span class="blog-link">${translations[lang]['blog.readmore']}</span>
       </div>
-    </div>`);
+    </a>`);
 
   const bloggerCards = bloggerEntries.slice(0,6).map(entry=>{
     const title = entry.title ? stripHtml(entry.title.$t) : '';
